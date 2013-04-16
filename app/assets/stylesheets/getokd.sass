@@ -1,0 +1,140 @@
+@font-face
+  font-family: ErnestinePro
+  src: url(font-path('EnerstinePro.otf')) format('opentype')
+
+@font-face
+  font-family: ErnestinePro
+  font-weight: bold
+  src: url(font-path('EnerstinePro-Bold.otf')) format('opentype')
+
+body
+  margin: 0px
+  font:
+    size: 12px
+    family: 'Helvetica Neue', Arial, sans-serif
+
+h3
+  color: #5b7f19
+  font:
+    size: 24px
+    weight: bold
+
+h2
+  color: #99cc33
+  font:
+    size: 30px
+    family: ErnestinePro, sans-serif
+    weight: bold
+
+h1
+  color: #9c3
+  font:
+    size: 72px
+
+.header
+  background-color: #35BED4
+  width: 100%
+  padding-top: 3px
+  padding-bottom: 3px
+  height: 40px
+  img
+    position: relative
+    z-index: 2243
+    left: 12%
+    top: 13px
+  div
+    float: right
+  a#sign_in
+    float: right
+    line-height: 25px
+    text-decoration: none
+
+.container
+  max-width: 1280px
+  margin: 0 auto
+
+.image-block
+  img
+    width: 100%
+
+.content
+  background-color: #ffffff
+  .info-block
+    .block-content
+      padding-left: 28%
+      padding-right: 10%
+      color: #464646
+      font:
+        size: 24px
+      .row
+        display: table-row
+        .col-location
+          text-align: center
+          width: 50%
+        .col-chat-text
+          width: 55%
+        .col-chat
+          text-align: center
+        .cell
+          display: table-cell
+          vertical-align: middle
+    &#retailers
+      span
+        color: #2890a1
+        font-weight: bold
+        font-size: 24px
+
+  .block
+    height: 743px
+    position: relative
+    background:
+      position: top center
+      repeat: no-repeat
+    &#intro
+      background-image: url(image_path("image1.png"))
+      .text-block
+        padding-left: 20%
+        .block-content
+          margin-right: 120px
+      .image-content
+        top: -25px
+        max-width: 185px
+        font:
+          size: 14px
+        p
+          padding-left: 20px
+    &#ask
+      background-image: url(image_path("image2.png"))
+    &#give
+      background-image: url(image_path("image3.png"))
+
+  .text-block
+    color: #464646
+    background-color: #fff
+    position: absolute
+    bottom: 0px
+    padding-left: 28%
+    padding-bottom: 80px
+    font:
+      size: 24px
+    .block-content
+      width: 53%
+      float: left
+      margin-right: 20px
+
+  .image-content
+    float: left
+    position: relative
+    top: -55px
+
+.footer
+  background-color: #363636
+  color: #f5f5f5
+  text-align: center
+  height: 50px
+  margin-top: 60px
+  img
+    padding-right: 10px
+  span
+    line-height: 50px
+
