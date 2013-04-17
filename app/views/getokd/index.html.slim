@@ -7,41 +7,52 @@ div.page
     div.content
       div.block#intro
         div.text-block
-          div.block-content
-            p
-              |
-                Whether you're an employee running errrands for your boss, a college student 
-                who needs money from your parents, or a friend wanting to give a gift to someone
-                special, Ok'd is easy to use by anyone, anywhere, for anything.
-          div.image-content
-            = image_tag "app-store-logo.png"
-            p
-              | Non iphone users.
-              br
-              | Sorry we're not quite ready for you yet
+          div.image-text
+            | A simple, secure way to ask for and give money.
+          div.block-content-wrapper
+            div.image-content.mobile
+              = image_tag "app-store-logo.png"
+            div.block-content
+              p
+                |
+                  Whether you're an employee running errrands for your boss, a college student 
+                  who needs money from your parents, or a friend wanting to give a gift to someone
+                  special, Ok'd is easy to use by anyone, anywhere, for anything.
+            div.image-content.non-mobile
+              = image_tag "app-store-logo.png"
+              p.non-mobile
+                | Non iphone users.
+                br
+                | Sorry we're not quite ready for you yet
       div.block#ask
         div.text-block
-          div.block-content
-            h3 When you need money, Ok'd is always there.
-            p
-              |
-                Pick anyone from your contact list and ask them to help you buy an item while
-                you're in the store. Immediately, a card appears on the screen and you make
-                you purchase right then and there.
-          div.image-content
-            = image_tag "vector1.png"
+          div.image-text
+            | ask
+          div.block-content-wrapper
+            div.block-content
+              h3 When you need money, Ok'd is always there.
+              p
+                |
+                  Pick anyone from your contact list and ask them to help you buy an item while
+                  you're in the store. Immediately, a card appears on the screen and you make
+                  you purchase right then and there.
+            div.image-content
+              = image_tag "vector1.png"
       div.block#give
         div.text-block
-          div.block-content
-            h3 Give money to anyone to use anywhere.
-            p
-              |
-                You can give money to anyone, whether they have a bank account or not.
-                You don't have to wait to send and they don't have to wait to receive.
-                As long as the person you are giving money to has a phone number, you are good to go.
-                It is that simple.
-          div.image-content
-            = image_tag "vector2.png"
+          div.image-text
+            | give
+          div.block-content-wrapper
+            div.block-content
+              h3 Give money to anyone to use anywhere.
+              p
+                |
+                  You can give money to anyone, whether they have a bank account or not.
+                  You don't have to wait to send and they don't have to wait to receive.
+                  As long as the person you are giving money to has a phone number, you are good to go.
+                  It is that simple.
+            div.image-content
+              = image_tag "vector2.png"
 
       div.info-block#convenience
         div.block-content
@@ -49,7 +60,7 @@ div.page
 
           div.table
             div.row
-              div.col-location.cell
+              div.col-location.cell.non-mobile
                 = image_tag "vector3.png"
               div.col-location-text.cell
                 h3 Location-Based
@@ -70,7 +81,7 @@ div.page
                   |
                     No need to leave the app to send a text to the Asker or Giver.
                     With the built-in conversation screen you can send and reply to messages when you send an Ask or a Give.
-              div.col-chat.cell
+              div.col-chat.cell.non-mobile
                 = image_tag "vector4.png"
 
 

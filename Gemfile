@@ -2,7 +2,14 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
 gem 'slim'
-gem 'pg'
+
+group :production do
+  gem 'pg'
+end
+
+group :development do
+  gem 'sqlite3'
+end
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
