@@ -30,13 +30,14 @@ div.page
             | ask
           div.block-content-wrapper
             div.block-content
+              = image_tag "vector1_small.png", id: "ask-image", class: "mobile wrap-ready"
               h3 When you need money, Ok'd is always there.
               p
                 |
                   Pick anyone from your contact list and ask them to help you buy an item while
                   you're in the store. Immediately, a card appears on the screen and you make
                   you purchase right then and there.
-            div.image-content
+            div.image-content.non-mobile
               = image_tag "vector1.png"
       div.block#give
         div.text-block
@@ -44,6 +45,7 @@ div.page
             | give
           div.block-content-wrapper
             div.block-content
+              = image_tag "vector2_small.png", id: "give-image", class: "mobile wrap-ready"
               h3 Give money to anyone to use anywhere.
               p
                 |
@@ -51,7 +53,7 @@ div.page
                   You don't have to wait to send and they don't have to wait to receive.
                   As long as the person you are giving money to has a phone number, you are good to go.
                   It is that simple.
-            div.image-content
+            div.image-content.non-mobile
               = image_tag "vector2.png"
 
       div.info-block#convenience

@@ -4,12 +4,12 @@ $ipad: 1204px
 
 @font-face
   font-family: ErnestinePro
-  src: url(font-path('EnerstinePro.otf')) format('opentype')
+  src: url(font-path('ErnestinePro.otf')) format('font/opentype')
 
 @font-face
   font-family: ErnestinePro
   font-weight: bold
-  src: url(font-path('EnerstinePro-Bold.otf')) format('opentype')
+  src: url(font-path('ErnestinePro-Bold.otf')) format('font/opentype')
 
 @media all
   body
@@ -233,11 +233,17 @@ $ipad: 1204px
     .block#intro
       .image-text
         font-size: 30px
+        width: 60%
       .block-content-wrapper
+        margin-top: 30px
+        .image-content
+          float: none
+          margin: 0 auto
         .block-content
           font-size: 18px
     .block
       background-size: 140%
+      height: 640px
       .text-block
         .image-text
           padding-left: 25px !important
@@ -249,3 +255,11 @@ $ipad: 1204px
           margin-right: 20px !important
           width: 100% !important
           font-size: 15px
+          p
+            margin-right: 20px !important
+
+          img
+            float: right
+            margin-top: -60px
+  .footer
+    padding-left: 25px
