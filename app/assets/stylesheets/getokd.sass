@@ -5,18 +5,21 @@ $ipad: 1204px
 @font-face
   font-family: ErnestinePro
   src: url(font-path('ErnestinePro.otf')) format('font/opentype')
+  font-weight: normal
+  font-style: normal
 
 @font-face
   font-family: ErnestinePro
-  font-weight: bold
   src: url(font-path('ErnestinePro-Bold.otf')) format('font/opentype')
+  font-weight: bold
+  font-style: normal
 
 @media all
   body
     margin: 0px
     font:
       size: 12px
-      family: 'Helvetica Neue', Arial, sans-serif
+      family: 'Helvetica Neue'
 
   p
     margin-top: 5px
@@ -32,13 +35,16 @@ $ipad: 1204px
     color: #99cc33
     font:
       size: 30px
-      family: ErnestinePro, sans-serif
+      family: ErnestinePro
       weight: bold
 
   h1
     color: #9c3
     font:
       size: 72px
+
+  .bold
+    font-weight: bold
 
   .mobile
     display: none
@@ -70,7 +76,7 @@ $ipad: 1204px
       color: white
       font:
         size: 14px
-        family: "Helvetica Neue", Arial, sans-serif
+        family: "Helvetica Neue"
 
   .container
     max-width: 1280px
@@ -102,10 +108,13 @@ $ipad: 1204px
             display: table-cell
             vertical-align: middle
       &#retailers
-        span
-          color: #2890a1
-          font-weight: bold
-          font-size: 24px
+        p.demo
+          font:
+            size: 24px
+            family: 'Helvetica Neue'
+          span
+            color: #2890a1
+            font-size: 24px
 
     .block
       height: 743px
@@ -119,6 +128,8 @@ $ipad: 1204px
         .image-text
           font-size: 48px
           width: 35%
+          padding-top: 7%
+          padding-left: 20%
         .text-block
           .block-content-wrapper, .image-text
             padding-left: 20%
@@ -209,7 +220,7 @@ $ipad: 1204px
   h1
     color: #99cc33
     font:
-      family: ErnestinePro, sans-serif
+      family: ErnestinePro
       weight: bold
       size: 21px
 
@@ -226,24 +237,39 @@ $ipad: 1204px
 
   .content
     .info-block
+      h1, h2
+        text-align: center
       .block-content
         padding-left: 25px
         padding-right: 20px
         font-size: 15px
+
+      &#retailers
+        p.demo
+          font-size: 15px
+          span
+            font-size: 15px
+
     .block#intro
       .image-text
         font-size: 30px
         width: 60%
+        padding-top: 15%
+        padding-left: 25px
       .block-content-wrapper
         margin-top: 30px
         .image-content
           float: none
           margin: 0 auto
+          margin-bottom: -25px
         .block-content
           font-size: 18px
+    .block#give
+      .block-content-wrapper
+
     .block
       background-size: 140%
-      height: 640px
+      height: 590px
       .text-block
         .image-text
           padding-left: 25px !important
@@ -251,6 +277,7 @@ $ipad: 1204px
 
       .block-content-wrapper
         padding-left: 25px !important
+        padding-bottom: 30px
         .block-content
           margin-right: 20px !important
           width: 100% !important
