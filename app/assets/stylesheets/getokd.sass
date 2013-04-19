@@ -4,15 +4,21 @@ $ipad: 1204px
 
 @font-face
   font-family: ErnestinePro
-  src: url(font-path('ErnestinePro.otf')) format('font/opentype')
+  src: url(font-path('ErnestinePro.otf')) format('opentype')
   font-weight: normal
   font-style: normal
 
 @font-face
   font-family: ErnestinePro
-  src: url(font-path('ErnestinePro-Bold.otf')) format('font/opentype')
+  src: url(font-path('ErnestinePro-Bold.otf')) format('opentype')
   font-weight: bold
   font-style: normal
+
+@font-face
+  font-family: ErnestinePro
+  src: url(font-path('ErnestinePro-BoldItalic.otf')) format('opentype')
+  font-weight: bold
+  font-style: italic
 
 @media all
   body
@@ -37,6 +43,7 @@ $ipad: 1204px
       size: 30px
       family: ErnestinePro
       weight: bold
+      style: italic
 
   h1
     color: #9c3
@@ -148,9 +155,13 @@ $ipad: 1204px
         background-image: url(image_path("image3.png"))
 
     .image-text
-      font-size: 186px
       color: white
       padding-left: 28%
+      font:
+        size: 186px
+        family: ErnestinePro
+        weight: bold
+        style: italic
     .text-block
       color: #464646
       position: absolute
@@ -176,10 +187,10 @@ $ipad: 1204px
   .footer
     background-color: #363636
     color: #f5f5f5
-    height: 50px
     margin-top: 60px
     padding-left: 20%
-    div
+    overflow: hidden
+    div.paidpiper
       float: left
       img
         padding-right: 10px
@@ -290,3 +301,7 @@ $ipad: 1204px
             margin-top: -60px
   .footer
     padding-left: 25px
+    .legend
+      padding: 10px 0 10px 54px
+      span
+        line-height: inherit
