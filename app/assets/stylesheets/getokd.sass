@@ -20,6 +20,12 @@ $ipad: 1204px
   font-weight: bold
   font-style: italic
 
+@font-face
+  font-family: ErnestinePro
+  src: url(font-path('ErnestinePro-Italic.otf')) format('opentype')
+  font-weight: normal
+  font-style: italic
+
 @media all
   body
     margin: 0px
@@ -49,6 +55,8 @@ $ipad: 1204px
     color: #9c3
     font:
       size: 72px
+      family: ErnestinePro
+      style: italic
 
   .bold
     font-weight: bold
@@ -82,7 +90,7 @@ $ipad: 1204px
       text-align: center
       color: white
       font:
-        size: 14px
+        size: 12px
         family: "Helvetica Neue"
 
   .container
@@ -137,6 +145,7 @@ $ipad: 1204px
           width: 35%
           padding-top: 7%
           padding-left: 20%
+          font-weight: normal
         .text-block
           .block-content-wrapper, .image-text
             padding-left: 20%
@@ -153,15 +162,25 @@ $ipad: 1204px
         background-image: url(image_path("image2.png"))
       &#give
         background-image: url(image_path("image3.png"))
+        .text-block
+          .block-content-wrapper
+            padding-bottom: 0px
+          span
+            bottom: -27px
 
     .image-text
       color: white
       padding-left: 28%
+      text-shadow: 1px 3px #464646
+      overflow: hidden
       font:
         size: 186px
         family: ErnestinePro
         weight: bold
         style: italic
+      span
+        position: relative
+        bottom: -47px
     .text-block
       color: #464646
       position: absolute
@@ -222,7 +241,6 @@ $ipad: 1204px
       .block-content-wrapper
         padding-left: 10%
 
-
 @media screen and (max-width: $ipadPortrait - 1)
   h2
     font-size: 21px
@@ -276,7 +294,10 @@ $ipad: 1204px
         .block-content
           font-size: 18px
     .block#give
-      .block-content-wrapper
+      .text-block
+        .image-text
+          span
+            bottom: -10px
 
     .block
       background-size: 140%
@@ -285,6 +306,8 @@ $ipad: 1204px
         .image-text
           padding-left: 25px !important
           font-size: 93px
+          span
+            bottom: -24px
 
       .block-content-wrapper
         padding-left: 25px !important
